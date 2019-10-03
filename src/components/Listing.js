@@ -4,9 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { withRouter } from 'react-router';
 import { getListing } from '../store/actions/listing';
 
-const Listing = props => {
-  const data = [];
-  const { history } = props;
+const Listing = () => {
   const dispatch = useDispatch();
   const listData = useSelector(state => state.listing.data);
 
